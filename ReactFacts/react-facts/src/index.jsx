@@ -1,7 +1,13 @@
 import { createRoot } from "react-dom/client";
+import { Fragment } from "react";
 
 const root = createRoot(document.getElementById("root"))
 root.render(
+    <TempName />
+)
+
+function TempName(){
+    return (
     <main className="body">
         <img src="src\react-logo.jpg" width="40" alt="React Logo"/>
         <h1 className="h1">Fun Facts About React!</h1>
@@ -14,3 +20,4 @@ root.render(
         </ul>
     </main>
 )
+}
