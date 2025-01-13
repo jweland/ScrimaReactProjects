@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client";
 import NavBar from "./Components/NavBar";
-import MainContent from "./Components/MainContent";
+import Main from "./Components/Main";
 
 const root = createRoot(document.getElementById("root"))
 
@@ -8,7 +8,7 @@ function Page(){
     return (
         <>
             <NavBar />
-            <MainContent />
+            <Main />
         </>
     )
 }
