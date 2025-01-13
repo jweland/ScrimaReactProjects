@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+}
+
+header {
+    background-color: #f55a5a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+}
+
+.globe {
+    width: 40px;
+    margin-right: 8px;
+}
+
+header > h1 {
+    font-size: 0.9rem;
+    font-weight: 500%;
+    font-family: sans-serif;
+}
