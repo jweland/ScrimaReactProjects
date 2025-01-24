@@ -28,6 +28,7 @@ export default function Main() {
             <ul>
                 {ingredientsListItems}
             </ul>
+            {ingredientsListItems.length > 2 && <p>Do you want a recipe?</p> }
         </main>
     )
 }
