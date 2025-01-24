@@ -24,6 +24,7 @@ export default function Main() {
                 />
                 <button>Add ingredient</button>
             </form>
+            <h1>Ingredients on hand:</h1>
             <ul>
                 {ingredientsListItems}
             </ul>
