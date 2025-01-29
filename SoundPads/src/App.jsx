@@ -7,12 +7,14 @@ export default function App(props) {
 
     const darkMode = props.darkMode ? "#222222" : "#cccccc"
 
-    function toggle() {
-        console.log(Clicked)
+    function toggle(id) {
+        setPad(prevPads => prevPads.map(item => {
+            return item.id === id ? {...item, on: !item.on} : item
+        }))
     }
 
     const buttonElement = pads.map(pad => (
-      <Pad toggle={toggle} key={pad.id} color={pad.color} on={pad.on}/>
+      <Pad toggle={toggle} id={pad.id}key={pad.id} color={pad.color} on={pad.on}/>
     ))
 
     return (
